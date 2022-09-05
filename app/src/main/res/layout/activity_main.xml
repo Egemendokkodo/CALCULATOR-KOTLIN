@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c1c1c"
+    tools:context=".MainActivity"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomTop4"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/oldIslem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:paddingEnd="40sp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="40sp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="80sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="13dp">
+
+        <RelativeLayout
+            android:id="@+id/rlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonZero"
+                android:layout_width="163sp"
+                android:layout_height="70sp"
+                android:layout_marginEnd="17sp"
+                android:layout_marginBottom="40sp"
+                android:background="@drawable/roundbtn2"
+                android:paddingLeft="10sp"
+                android:text="0"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/buttonDot"
+                android:layout_width="wrap_content"
+                android:layout_height="70sp"
+                android:layout_marginEnd="17sp"
+                android:layout_toEndOf="@+id/buttonZero"
+                android:background="@drawable/roundbtn2"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/buttonEquals"
+                android:layout_width="78sp"
+                android:layout_height="74sp"
+                android:layout_marginStart="0dp"
+
+                android:layout_toEndOf="@+id/buttonDot"
+                android:background="@drawable/roundtbn"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomTop1"
+        android:layout_width="wrap_content"
+        android:layout_height="74sp"
+        android:layout_above="@+id/bottom"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="9dp">
+
+        <Button
+            android:id="@+id/buttonOne"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="17sp"
+            android:layout_marginBottom="40sp"
+            android:background="@drawable/roundbtn2"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonTwo"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="17sp"
+            android:background="@drawable/roundbtn2"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonThree"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/roundbtn2"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:background="@drawable/roundtbn"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomTop2"
+        android:layout_width="wrap_content"
+        android:layout_height="74sp"
+        android:layout_above="@+id/bottomTop3"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="9dp">
+
+        <Button
+            android:id="@+id/buttonSeven"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="17sp"
+            android:layout_marginBottom="40sp"
+            android:background="@drawable/roundbtn2"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonEight"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="17sp"
+            android:background="@drawable/roundbtn2"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonNine"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/roundbtn2"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:background="@drawable/roundtbn"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomTop3"
+        android:layout_width="wrap_content"
+        android:layout_height="74sp"
+        android:layout_above="@+id/bottomTop1"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/buttonFour"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="17sp"
+            android:layout_marginBottom="40sp"
+            android:background="@drawable/roundbtn2"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonFive"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="17sp"
+            android:background="@drawable/roundbtn2"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonSix"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/roundbtn2"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+
+            android:background="@drawable/roundtbn"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomTop4"
+        android:layout_width="wrap_content"
+        android:layout_height="74sp"
+        android:layout_above="@+id/bottomTop2"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="9dp">
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="17sp"
+            android:layout_marginBottom="40sp"
+            android:background="@drawable/round3"
+            android:text="D"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonSomething"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="17sp"
+            android:background="@drawable/round3"
+            android:text="+/-"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonPercent"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/round3"
+            android:text="%"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="78sp"
+            android:layout_height="74sp"
+            android:background="@drawable/roundtbn"
+            android:text="÷"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
